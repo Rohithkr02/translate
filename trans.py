@@ -4,7 +4,7 @@ st.header('Machine Translation Demo')
 input=st.text_area("Please enter the text",value="")
 option=st.selectbox(
                     'To which language you wish to translate this text do?',
-                    ('Malyalam','Hindi','Tamil'))
+                    ('Malayalam','Hindi','Tamil'))
 if  st.button("Translate"):
     translator=Translator()
     translation=translator.translate(input,dest=option)
